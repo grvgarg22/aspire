@@ -1,5 +1,6 @@
 $accent 			:	#DDB142;
 $theme-color 		:	#08174A;
+$secondary-color	:	#D6C183;
 $head-font			:	'DM Serif Display', serif;
 $primary-font		:	'Poppins', sans-serif;
 
@@ -56,10 +57,34 @@ a:hover, a:focus {text-decoration: none;}
 			.nav-link:after {content: " "; height: 3px; width: 1rem; background-color: $accent; position: absolute; bottom: 0; border-radius: 1rem; margin: auto;}
 		}
 	}
-	.navbar-right {background-color: #D6C183; padding: 0.5rem 5rem; width: 40%; display: inline-flex; justify-content: flex-end;
+	.navbar-right {background-color: $secondary-color; padding: 0.5rem 5rem; width: 40%; display: inline-flex; justify-content: flex-end;
 		.nav-item {margin: 0.5rem 0;
 			.nav-link {margin: 0;
 				img {width: 2rem;}
+			}
+		}
+	}
+}
+
+/**** MAIN FRAME ****/
+.main-frame {height: 88vh; width: 100%; display: flex; flex-wrap: nowrap; justify-content: flex-start; position: relative;
+	.sub-sec-left {width: 91%; background-color: $theme-color; background-image: url(../img/bg-img.jpg); background-size: 100%; background-repeat: no-repeat; background-blend-mode: multiply;}
+	.sub-sec-right {width: 40%; background-color: $secondary-color;}
+	.main-frame-overlay {position: absolute; top: 0; left: 5rem; right: 5rem; bottom: 0; display: flex; justify-content: center; align-items: center;
+		.uniq-grid {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+		.section-header {margin-bottom: 0;
+			.section-title-md {color: #fff; width: 70%;}
+			.section-text {color: #fff; margin: 1rem 0;}
+			.explore-btn {margin: 0.5rem 0;}
+		}
+		.card {position: relative;
+			.img-overlay {position: absolute; top: 44%; left: 46%;
+				a {background-color: $theme-color;	padding: 1.5rem 1rem; border-radius: 5rem; transition: all 500ms;
+					svg {color: $accent; width: 2.5rem; height: 2.5rem; padding: 0.25rem; border: 2px solid $accent; border-radius: 5rem; background-color: $theme-color; transition: all 500ms;}
+				}
+				a:hover, a:focus {background-color: $accent;
+					svg {color: $theme-color; border-color: $theme-color; background-color: $accent;}
+				}
 			}
 		}
 	}
@@ -332,6 +357,9 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 	.navbar {padding: 0rem;}
 	.navbar-dark .navbar-brand {margin-left: 1rem;}
 	.navbar .navbar-right {width: 100%; justify-content: space-evenly; flex-direction: row;}
+
+	.main-frame .main-frame-overlay {left: 1rem; right: 1rem; top: 1rem; bottom: 1rem;}
+	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
 
 	.core-values {padding: 1rem;}
 	.core-values .section-header {margin-top: 2rem; margin-bottom: 2rem;}

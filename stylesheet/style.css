@@ -53,6 +53,23 @@ a:hover, a:focus { text-decoration: none; }
 .navbar .navbar-right .nav-item .nav-link { margin: 0; }
 .navbar .navbar-right .nav-item .nav-link img { width: 2rem; }
 
+/**** MAIN FRAME ****/
+.main-frame { height: 88vh; width: 100%; display: flex; flex-wrap: nowrap; justify-content: flex-start; position: relative; }
+.main-frame .sub-sec-left { width: 91%; background-color: #08174A; background-image: url(../img/bg-img.jpg); background-size: 100%; background-repeat: no-repeat; background-blend-mode: multiply; }
+.main-frame .sub-sec-right { width: 40%; background-color: #D6C183; }
+.main-frame .main-frame-overlay { position: absolute; top: 0; left: 5rem; right: 5rem; bottom: 0; display: flex; justify-content: center; align-items: center; }
+.main-frame .main-frame-overlay .uniq-grid { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
+.main-frame .main-frame-overlay .section-header { margin-bottom: 0; }
+.main-frame .main-frame-overlay .section-header .section-title-md { color: #fff; width: 70%; }
+.main-frame .main-frame-overlay .section-header .section-text { color: #fff; margin: 1rem 0; }
+.main-frame .main-frame-overlay .section-header .explore-btn { margin: 0.5rem 0; }
+.main-frame .main-frame-overlay .card { position: relative; }
+.main-frame .main-frame-overlay .card .img-overlay { position: absolute; top: 44%; left: 46%; }
+.main-frame .main-frame-overlay .card .img-overlay a { background-color: #08174A; padding: 1.5rem 1rem; border-radius: 5rem; transition: all 500ms; }
+.main-frame .main-frame-overlay .card .img-overlay a svg { color: #DDB142; width: 2.5rem; height: 2.5rem; padding: 0.25rem; border: 2px solid #DDB142; border-radius: 5rem; background-color: #08174A; transition: all 500ms; }
+.main-frame .main-frame-overlay .card .img-overlay a:hover, .main-frame .main-frame-overlay .card .img-overlay a:focus { background-color: #DDB142; }
+.main-frame .main-frame-overlay .card .img-overlay a:hover svg, .main-frame .main-frame-overlay .card .img-overlay a:focus svg { color: #08174A; border-color: #08174A; background-color: #DDB142; }
+
 /**** CORE VALUES ****/
 .core-values { background-color: #F9F9F9; padding: 5rem; }
 .core-values .section-header { justify-content: center; margin-bottom: 4rem; }
@@ -216,6 +233,8 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #DDB142; w
   .navbar { padding: 0rem; }
   .navbar-dark .navbar-brand { margin-left: 1rem; }
   .navbar .navbar-right { width: 100%; justify-content: space-evenly; flex-direction: row; }
+  .main-frame .main-frame-overlay { left: 1rem; right: 1rem; top: 1rem; bottom: 1rem; }
+  .main-frame .main-frame-overlay .section-header { margin-bottom: 1.5rem; width: 65%; }
   .core-values { padding: 1rem; }
   .core-values .section-header { margin-top: 2rem; margin-bottom: 2rem; }
   .core-values .section-body { margin-top: 2rem; }
