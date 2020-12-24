@@ -70,7 +70,7 @@ a:hover, a:focus {text-decoration: none;}
 .main-frame {height: 88vh; width: 100%; display: flex; flex-wrap: nowrap; justify-content: flex-start; position: relative;
 	.sub-sec-left {width: 91%; background-color: $theme-color; background-image: url(../img/bg-img.jpg); background-size: 100%; background-repeat: no-repeat; background-blend-mode: multiply;}
 	.sub-sec-right {width: 40%; background-color: $secondary-color;}
-	.main-frame-overlay {position: absolute; top: 0; left: 5rem; right: 5rem; bottom: 0; display: flex; justify-content: center; align-items: center;
+	.main-frame-overlay {position: absolute; top: 3rem; left: 5rem; right: 5rem; bottom: 0;
 		.uniq-grid {display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
 		.section-header {margin-bottom: 0;
 			.section-title-md {color: #fff; width: 70%;}
@@ -86,6 +86,10 @@ a:hover, a:focus {text-decoration: none;}
 					svg {color: $theme-color; border-color: $theme-color; background-color: $accent;}
 				}
 			}
+		}
+		.scroll-down {text-align: center; margin-top: 3rem;
+			svg {width: 1.5rem; height: 1.5rem; color: #fff; margin-bottom: 0.5rem;}
+			p {color: #fff; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;}
 		}
 	}
 }
@@ -362,6 +366,7 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 	.main-frame .main-frame-overlay {left: 1rem; right: 1rem; top: 1rem; bottom: 1rem;}
 	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
 	.main-frame .main-frame-overlay .section-header .section-title-md {width: 100%;}
+	.main-frame .main-frame-overlay .scroll-down {display: none;}
 
 	.core-values {padding: 1rem;}
 	.core-values .section-header {margin-top: 2rem; margin-bottom: 2rem;}
@@ -393,6 +398,11 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 @media only screen and (min-width: 768px) and (max-width: 1020px) {
 	.navbar {padding: 0rem 0rem 0 1rem;}
 	.section-m-p {padding: 2rem 1rem;}
+
+	.main-frame .sub-sec-left {background-repeat: repeat;}
+	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
+	.main-frame .main-frame-overlay .section-header .section-title-md {width: 100%;}
+
 	.core-values {padding: 2rem 1rem;}
 	.floor-plan .section-header .section-title-md {width: 100%;}
 	.floor-plan .section-header ul {flex-wrap: wrap;}
@@ -409,6 +419,14 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 	.navbar .navbar-nav .nav-item {margin: 0.5rem 0;}
 	.section-header .section-title-md { font-size: 2rem; }
 	.section-m-p { margin: 2rem 0; padding: 2rem 2rem; }
+
+	.main-frame .sub-sec-left {width: 93.7%;}
+	.main-frame .sub-sec-left {background-repeat: repeat;}
+	.main-frame .main-frame-overlay {position: absolute; top: 1rem; left: 7rem; right: 10rem; bottom: 0;}
+	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
+	.main-frame .main-frame-overlay .section-header .section-title-md {width: 100%;}
+	.main-frame .main-frame-overlay .scroll-down {margin-top: 2rem;}
+
 	.floor-plan .section-header ul { flex-wrap: wrap; justify-content: space-around; }
 	.floor-plan .section-header ul li { width: 5rem; }
 	.floor-plan .section-header ul li p { height: 2.5rem; }
