@@ -78,16 +78,17 @@ a:hover, a:focus {text-decoration: none;}
 			.explore-btn {margin: 0.5rem 0;}
 		}
 		.card {position: relative;
-			.img-overlay {position: absolute; top: 44%; left: 46%;
-				a {background-color: $theme-color;	padding: 1.5rem 1rem; border-radius: 5rem; transition: all 500ms;
+			.img-overlay {position: absolute; top: 0; left: 0; right: 0; bottom: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+				a {background-color: $theme-color;	padding: 1rem 1rem; border-radius: 5rem; transition: all 500ms;
 					svg {color: $accent; width: 2.5rem; height: 2.5rem; padding: 0.25rem; border: 2px solid $accent; border-radius: 5rem; background-color: $theme-color; transition: all 500ms;}
 				}
 				a:hover, a:focus {background-color: $accent;
 					svg {color: $theme-color; border-color: $theme-color; background-color: $accent;}
 				}
+				p {margin-top: 0.5rem; background-color: #fff; color: $theme-color; text-transform: uppercase; padding: 0.25rem 0.75rem; border-radius: 5rem; font-weight: 600; font-size: 0.8rem;}
 			}
 		}
-		.scroll-down {text-align: center; margin-top: 3rem;
+		.scroll-down {text-align: center; position: absolute; bottom: 2rem; right: 0; left: 0; display: flex; justify-content: center; align-items: center;
 			svg {width: 1.5rem; height: 1.5rem; color: #fff; margin-bottom: 0.5rem;}
 			p {color: #fff; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px;}
 		}
@@ -366,6 +367,7 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 	.main-frame .main-frame-overlay {left: 1rem; right: 1rem; top: 2rem; bottom: 1rem;}
 	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
 	.main-frame .main-frame-overlay .section-header .section-title-md {width: 100%;}
+	.main-frame .main-frame-overlay .scroll-down {display: none;}
 
 	.core-values {padding: 1rem;}
 	.core-values .section-header {margin-top: 2rem; margin-bottom: 2rem;}
@@ -400,6 +402,7 @@ footer {margin: 0; padding: 3rem 5rem 1rem; background-color: $theme-color;
 	.navbar {padding: 0rem 0rem 0 1rem;}
 	.section-m-p {padding: 2rem 1rem;}
 
+	.main-frame {height: 94vh;}
 	.main-frame .sub-sec-left {background-repeat: repeat;}
 	.main-frame .main-frame-overlay .section-header {margin-bottom: 1.5rem;	width: 65%;}
 	.main-frame .main-frame-overlay .section-header .section-title-md {width: 100%;}
