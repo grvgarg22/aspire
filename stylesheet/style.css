@@ -258,9 +258,11 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #DDB142; w
   .navbar { padding: 0rem; }
   .navbar-dark .navbar-brand { margin-left: 1rem; }
   .navbar .navbar-right { width: 100%; justify-content: space-evenly; flex-direction: row; }
-  .main-frame .sub-sec-left { background-repeat: repeat; }
-  .main-frame .main-frame-overlay { left: 1rem; right: 1rem; top: 2rem; bottom: 1rem; }
-  .main-frame .main-frame-overlay .section-header { margin-bottom: 1.5rem; width: 65%; }
+  .main-frame { height: auto; position: initial; }
+  .main-frame .sub-sec-left { background-repeat: repeat; width: 100%; }
+  .main-frame .sub-sec-right { display: none; }
+  .main-frame .main-frame-overlay { position: initial; padding: 2rem 1rem; }
+  .main-frame .main-frame-overlay .section-header { margin-bottom: 1.5rem; width: 100%; }
   .main-frame .main-frame-overlay .section-header .section-title-md { width: 100%; }
   .main-frame .main-frame-overlay .scroll-down { display: none; }
   .a-w-work .work-review .card-img-overlay { bottom: -7rem; width: 93%; }
@@ -288,10 +290,13 @@ footer svg { position: absolute; right: 1rem; bottom: 0.65rem; color: #DDB142; w
   footer { margin: 0; padding: 1rem; }
   footer ul li { margin: 0.5rem 1rem 0.5rem 0; float: left; }
   .footer-ftr p { margin-top: 0.5rem; } }
-@media only screen and (min-width: 768px) and (max-width: 1020px) { .navbar { padding: 0rem 0rem 0 1rem; }
+@media only screen and (min-width: 768px) and (max-width: 1020px) { .navbar { padding: 0rem; }
+  .navbar-dark .navbar-brand { margin-left: 1rem; }
+  .navbar .navbar-right { width: 100%; justify-content: space-evenly; flex-direction: row; }
   .section-m-p { padding: 2rem 1rem; }
   .main-frame { height: 94vh; }
-  .main-frame .sub-sec-left { background-repeat: repeat; }
+  .main-frame .sub-sec-left { background-repeat: repeat; width: 100%; }
+  .main-frame .sub-sec-right { display: none; }
   .main-frame .main-frame-overlay .section-header { margin-bottom: 1.5rem; width: 65%; }
   .main-frame .main-frame-overlay .section-header .section-title-md { width: 100%; }
   .main-frame .main-frame-overlay .scroll-down { bottom: 2rem; }
