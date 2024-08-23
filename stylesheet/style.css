@@ -37,7 +37,7 @@ a:hover, a:focus { text-decoration: none; }
 .no_gutter { padding: 0; }
 
 /**** NAVIGATION BAR ****/
-.navbar { background-color: #08174A; padding: 0rem 0rem 0 5rem; }
+.navbar { background-color: #08174A; padding: 0rem 0rem 0 9.85rem; }
 .navbar .navbar-brand img { width: 14rem; }
 .navbar .navbar-nav { align-items: center; }
 .navbar .navbar-nav .nav-item { margin: 0.5rem; position: relative; }
